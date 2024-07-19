@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+    <div class="side">
+        <div class="user">
+            <span>F-APP</span>
+        </div>
+        <div class="logo">
+            <img src="../image/captain.png" alt="用户头像" />
+        </div>
+        <div class="navbar">
+            <ul class="menu">地层加固工程量计算
+                <li data-form="formA1">暗挖超前深孔注浆</li>
+                <li data-form="formA2">盾构径向二次注浆</li>
+                <li data-form="formA3">地面袖阀管注浆</li>
+                <li data-form="formA4">高压旋喷加固体</li>
+                <li data-form="formA5">多排旋喷桩加固</li>
+            </ul>
+            <ul class="menu">地下结构常用设计
+                <li data-form="formB1">钢支撑结构设计</li>
+                <li data-form="formB2">★钢围檩结构设计</li>
+                <li data-form="formB3">★砼冠梁结构设计</li>
+                <li data-form="formB4">围护桩受弯承载力设计</li>
+                <li data-form="formB5">围护桩抗剪承载力设计</li>
+                <li data-form="formB6">★围护桩抗拔承载力设计</li>
+                <li data-form="formB7">★缀板式格构柱设计</li>
+                <li data-form="formB8">★坑外管井降水设计</li>
+                <li data-form="formB9">★明挖框架结构设计</li>
+                <li data-form="formB10">★明挖结构抗浮设计</li>
+                <li data-form="formB11">★混凝土框架柱设计</li>
+                <li data-form="formB12">★钢管混凝土柱设计</li>
+                <li data-form="formB13">★地基承载力设计</li>
+                <li data-form="formB14">★刚度/截面转换(圆形-矩形)</li>
+                <li data-form="formB15">★盾构管片工程量</li>
+                <li data-form="formB16">★临轨墙疲劳验算</li>
+
+
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="head">
+            <div>首页</div>
+            <div>反馈</div>
+            <div>关于</div>
+        </div>
+        <div class="middle">
+            <div class="forms">
+                <form id="formA1" class="form">
+                    <h1>暗挖超前深孔注浆</h1>
+                    <label><input type="number" id="volume1" placeholder="200">加固土体体积(m³)</label>
+                    <label><input type="number" id="Slurry1" placeholder="820">浆液单价(元/m³)</label>
+                    <label><input type="number" id="porosity1" placeholder="0.8">土体孔隙率</label>
+                    <label><input type="number" id="filling1" placeholder="0.3">填充系数</label>
+                    <label><input type="number" id="loss1" placeholder="1.15">损耗率</label>
+                    <div class="description">
+                        <p>1、建议暗挖断面拱顶120º~150º范围内、初支内0.5m、初支外1.5m。注浆浆液采用单液浆。</p>
+                        <p>2、建议深孔注浆的初压为0.7~1.0MPa,终压为为1.5MPa,注浆后土体无侧限抗压强度不低于0.5MPa,渗透系数不大于1X10<sup>-7</sup>cm/s。</p>
+                    </div>
+                    <button id="submitA1" type="button">计算</button><br>
+                </form>
+                <form id="formA2" class="form">
+                    <h1>盾构径向二次注浆</h1>
+                    <label><input type="number" id="total2" placeholder="6">小导管数量(根)</label>
+                    <label><input type="number" id="length2" placeholder="3">小导管长度(m)</label>
+                    <label><input type="number" id="pipe2" placeholder="450">小导管单价(元/m)</label>
+                    <label><input type="number" id="price2" placeholder="690">浆液单价(元/m³)</label>
+                    <label><input type="number" id="radius2" placeholder="0.5">扩散半径(m)</label>
+                    <label><input type="number" id="porosity2" placeholder="0.3">土体孔隙率</label>
+                    <label><input type="number" id="filling2" placeholder="0.8">填充系数</label>
+                    <label><input type="number" id="loss2" placeholder="1.15">损耗率</label>
+                    <div class="description">
+                        <p>1、建议注浆管采用DN32,t=3.25mm水煤气管,注浆浆液扩散半径设计为0.5m。</p>
+                        <p>2、建议浆液采用水泥浆,注浆压力为0.5~1.5Mpa,施工时应通过现场试验调整注浆压力确保注浆扩散半径,注浆后土体无侧限抗压强度为0.5~1.5MPa。</p>
+                    </div>
+                    <button id="submitA2" type="button">计算</button><br>
+                </form>
+                <form id="formA3" class="form">
+                    <h1>地面袖阀管注浆</h1>
+                    <label><input type="number" id="length3" placeholder="10">加固土体长度(m)</label>
+                    <label><input type="number" id="width3" placeholder="10">加固土体宽度(m)</label>
+                    <label><input type="number" id="height3" placeholder="3">加固土体高度(m)</label>
+                    <label><input type="number" id="depth3" placeholder="10">加固土体覆土(m)</label>
+                    <label><input type="number" id="distance3" placeholder="0.8">注浆管间距(m)</label>
+                    <label><input type="number" id="kPrice3" placeholder="70">空钻单价(元/m)</label>
+                    <label><input type="number" id="sPrice3" placeholder="260">钻孔注浆单价(元/m)</label>
+                    <label><input type="number" id="radius3" placeholder="0.5">扩散半径(m)</label>
+                    <label><input type="number" id="porosity3" placeholder="0.3">土体孔隙率</label>
+                    <label><input type="number" id="filling3" placeholder="0.8">填充系数</label>
+                    <label><input type="number" id="loss3" placeholder="1.15">损耗率</label>
+                    <div class="description">
+                        <p>1、建议袖阀管注浆由地表采用800×800梅花型布置,直径89mm布孔,注浆方式为分层后退式注浆加固。</p>
+                        <p>2、建议浆液采用水泥浆,注浆压力逐步提高,注浆终压0.5~1.0MPa,达到注浆终压并继续注浆10min以上。</p>
+                        <p>3、建议注浆浆液扩散半径宜为0.5m,加固体28天龄期的单轴无侧限抗压强度为1~1.2MPa,抗渗系数10<sup>-7</sup>m/s。</p>
+                    </div>
+                    <button id="submitA3" type="button">计算</button><br>
+                </form>
+                <form id="formA4" class="form">
+                    <h1>高压旋喷加固体</h1>
+                    <label><input type="number" id="length4" placeholder="8">加固土体长度(m)</label>
+                    <label><input type="number" id="width4" placeholder="12">加固土体宽度(m)</label>
+                    <label><input type="number" id="height4" placeholder="12">加固土体高度(m)</label>
+                    <label><input type="number" id="depth4" placeholder="10">加固土体覆土(m)</label>
+                    <label><input type="number" id="diameter4" placeholder="0.6">旋喷桩直径(m)</label>
+                    <label><input type="number" id="distance4" placeholder="0.4">旋喷桩间距(m)</label>
+                    <label><input type="number" id="kPrice4" placeholder="43">旋喷桩钻孔单价(元/m)</label>
+                    <label><input type="number" id="zPrice4" placeholder="665">浆液单价(元/m)</label>
+                    <div class="description">
+                        <p>1、建议盾构始发、接收加固采用600@400地面旋喷桩加固。</p>
+                        <p>2、建议加固后土体应有良好的均匀性和自立性,其无侧限抗压强度控制在0.8~1MPa,渗透系数≤10cm/s。</p>
+                    </div>
+                    <button id="submitA4" type="button">计算</button><br>
+                </form>
+                <form id="formA5" class="form">
+                    <h1>多排旋喷桩加固</h1>
+                    <label><input type="number" id="width5" placeholder="2">旋喷桩排数(m)</label>
+                    <label><input type="number" id="length5" placeholder="20">加固土体长度(m)</label>
+                    <label><input type="number" id="height5" placeholder="10">加固土体高度(m)</label>
+                    <label><input type="number" id="depth5" placeholder="5">旋喷桩孔深(m)</label>
+                    <label><input type="number" id="diameter5" placeholder="0.6">旋喷桩直径(m)</label>
+                    <label><input type="number" id="distance5" placeholder="0.4">旋喷桩间距(m)</label>
+                    <label><input type="number" id="kPrice5" placeholder="43">旋喷桩钻孔单价(元/m)</label>
+                    <label><input type="number" id="zPrice5" placeholder="665">浆液单价(元/m)</label>
+                    <div class="description">
+                        <p>1、建议双排直径600@400高压旋喷桩,加固后土体强度不小于0.8MPa,渗透系数≥10m/s。</p>
+                    </div>
+                    <button id="submitA5" type="button">计算</button><br>
+                </form>
+                <form id="formB1" class="form">
+                    <h1>钢管支撑强度及稳定性计算</h1>
+                    <label>
+                        <select id="r0">
+                            <option class="option" value="0.9">0.9---普通</option>
+                            <option class="option" value="1.0">1.0---一般</option>
+                            <option class="option" value="1.1" selected>1.1---重要</option>
+                        </select>结构重要性系数
+                    </label>
+                    <label>
+                        <select id="dm">
+                            <option class="option" value="600">600</option>
+                            <option class="option" value="609" selected>609</option>
+                            <option class="option" value="800">800</option>
+                        </select>直径d(mm)
+                    </label>
+                    <label>
+                        <select id="wt">
+                            <option class="option" value="12">12</option>
+                            <option class="option" value="14">14</option>
+                            <option class="option" value="16" selected>16</option>
+                        </select>壁厚t(mm)
+                    </label>
+                    <label><input type="number" id="sp" placeholder="3" value="3">钢支撑间距 (m)</label>
+                    <label><input type="number" id="ang" placeholder="90" value="90">钢支撑角度 (°)</label>
+                    <label><input type="number" id="lx" placeholder="20" value="19">钢支撑长度(m)</label>
+                    <label><input type="checkbox" id="ol">钢支撑重叠</label>
+                    <label><input type="number" id="el" placeholder="206000" value="206000">钢材弹性模量(N/mm²)</label>
+                    <label><input type="number" id="lf" placeholder="1.25" value="1.25">荷载分项系数</label>
+                    <label><input type="number" id="st" placeholder="1000" value="550">轴力标准值(KN/m)</label>
+                    <label><input type="number" id="sg" placeholder="8" value="1">施工荷载(KN/m)</label>
+                    <label><input type="number" id="fi" placeholder="1" value="1">等效弯矩系数</label>
+                    <button id="submitB1" type="button">计算</button><br>
+                </form>
+                <form id="formB4" class="form">
+                    <h1>围护桩受弯设计</h1>
+                    <label>
+                        <select id="B4_r0">
+                            <option class="option" value="0.9">普通0.9</option>
+                            <option class="option" value="1.0" selected>一般1.0</option>
+                            <option class="option" value="1.1">重要1.1</option>
+                        </select>结构重要性系数
+                    </label>
+                    <label><input type="number" id="B4_lf" placeholder="1.25" value="1.25">荷载分项系数</label>
+                    <label>
+                        <select id="B4_dm">
+                            <option class="option" value="600">600</option>
+                            <option class="option" value="800" selected>800</option>
+                            <option class="option" value="1000">1000</option>
+                            <option class="option" value="1200">1200</option>
+                        </select>围护桩直径(mm)
+                    </label>
+                    <label>
+                        <select id="B4_fc">
+                            <option value="7.2">C15</option>
+                            <option value="9.6">C20</option>
+                            <option value="11.9">C25</option>
+                            <option value="14.3">C30</option>
+                            <option value="16.7" selected>C35</option>
+                            <option value="19.1">C40</option>
+                            <option value="21.1">C45</option>
+                            <option value="23.1">C50</option>
+                            <option value="25.3">C55</option>
+                            <option value="27.5">C60</option>
+                            <option value="29.7">C65</option>
+                            <option value="31.8">C70</option>
+                            <option value="33.8">C75</option>
+                            <option value="35.9">C80</option>
+                        </select>混凝土标号(N/mm²)
+                    </label>
+                    <label><input type="number" id="B4_gj" placeholder="25" value="25">钢筋直径(mm)</label>
+                    <label>
+                        <select id="B4_fy">
+                            <option value="270">HPB300</option>
+                            <option value="300">HRB335</option>
+                            <option value="300">HRBF335</option>
+                            <option value="360" selected>HRB400</option>
+                            <option value="360">HRBF400</option>
+                            <option value="360">RRB400</option>
+                            <option value="435">HRB500</option>
+                            <option value="435">HRBF500</option>
+                        </select>钢筋型号(N/mm²)
+                    </label>
+                    <label><input type="number" id="B4_tk" placeholder="70" value="70">混凝土保护层(mm)</label>
+                    <label><input type="number" id="B4_bd" placeholder="600" value="600">弯矩标准值(KN-m)</label>
+                    <button id="submitB4" type="button">计算</button><br>
+                </form>
+                <form id="formB5" class="form">
+                    <h1>围护桩抗剪设计</h1>
+                    <label>
+                        <select id="B5_r0">
+                            <option class="option" value="0.9">普通0.9</option>
+                            <option class="option" value="1.0" selected>一般1.0</option>
+                            <option class="option" value="1.1">重要1.1</option>
+                        </select>结构重要性系数
+                    </label>
+                    <label><input type="number" id="B5_lf" placeholder="1.25" value="1.25">荷载分项系数</label>
+                    <label>
+                        <select id="B5_dm">
+                            <option class="option" value="600">600</option>
+                            <option class="option" value="800" selected>800</option>
+                            <option class="option" value="1000">1000</option>
+                            <option class="option" value="1200">1200</option>
+                        </select>围护桩直径(mm)
+                    </label>
+                    <label>
+                        <select id="B5_ft">
+
+                            <option value="1.43">C30</option>
+                            <option value="1.57" selected>C35</option>
+                            <option value="1.71">C40</option>
+                            <option value="1.8">C45</option>
+                            <option value="1.89">C50</option>
+                            <option value="1.96">C55</option>
+                            <option value="2.04">C60</option>
+                            <option value="2.09">C65</option>
+                        </select>混凝土标号(N/mm²)
+                    </label>
+                    <label>
+                        <select id="B5_fy">
+                            <option value="270" selected>HPB300</option>
+                            <option value="300">HRB335</option>
+                            <option value="300">HRBF335</option>
+                            <option value="360">HRB400</option>
+                            <option value="360">HRBF400</option>
+                            <option value="360">RRB400</option>
+                            <option value="435">HRB500</option>
+                            <option value="435">HRBF500</option>
+                        </select>钢筋型号(N/mm²)
+                    </label>
+                    <label><input type="number" id="B5_bd" placeholder="600" value="600">剪力标准值(KN)</label>
+                    <label><input type="number" id="B5_sp" placeholder="100" value="100">箍筋间距(mm)</label>
+                    <button id="submitB5" type="button">计算</button><br>
+
+
+                </form>
+            </div>
+            <div id="output"></div>
+        </div>
+        <div class="foot">
+            <p>版权所有 &copy; 周先生的个人网站 v.1.0.0版&nbsp&nbsp联系邮箱: <a href="mailto:214143177@qq.com">214143177@qq.com</a></p>
+            <p>最后更新日期: 2024年5月,请勿转载和未允许盗用,谢谢配合。</p>
+        </div>
+    </div>
+    <script src="../js/menu.js"></script>
+    <script src="../js/formA.js"></script>
+    <script src="../js/formB1.js"></script>
+    <script src="../js/formB4.js"></script>
+    <script src="../js/formB5.js"></script>
+
+</body>
+
+</html>
